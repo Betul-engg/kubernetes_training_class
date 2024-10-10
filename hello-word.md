@@ -4,6 +4,8 @@ Markdown tagleriini deneyimleyelim.
 
 # En sık kullanılan markdown komutları
 
+*Bu italik metin.*
+
 Elbette! İşte Markdown komutlarının tablo formatında düzenlenmiş hali:
 
 | **Komut**                   | **Kullanım**                                        | **Örnek**                                   |
