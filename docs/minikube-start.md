@@ -37,3 +37,10 @@
    ```bash
    kubectl get nodes
    ```
+
+   6. **Minikube Profile**
+
+
+   ```bash
+   kubectl profile minikube
+   ```
