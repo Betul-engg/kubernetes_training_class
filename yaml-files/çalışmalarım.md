@@ -34,11 +34,35 @@ kubernetes-dashboard   kubernetes-dashboard-695b96c756-j5bv2       1/1     Runni
 
 ## kubectl get services
 
+```
+
 NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   13d
 
+```
 
-## kubectl get deployments
+## kubectl get namespaces
 
+```
 
+NAME                   STATUS   AGE
+default                Active   13d
+kube-node-lease        Active   13d
+kube-public            Active   13d
+kube-system            Active   13d
+kubernetes-dashboard   Active   13d
 
+```
+
+## kubectl get deployments -A
+
+```
+NAMESPACE              NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+kube-system            coredns                     1/1     1            1           13d
+kube-system            metrics-server              0/1     1            0           12d
+kubernetes-dashboard   dashboard-metrics-scraper   1/1     1            1           13d
+kubernetes-dashboard   kubernetes-dashboard        1/1     1            1           13d
+
+```
+
+## kubectl get deployments -o yaml -n kube-system | grep system
