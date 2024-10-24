@@ -32,3 +32,13 @@ kubernetes-dashboard   kubernetes-dashboard-695b96c756-j5bv2       1/1     Runni
 
 ```
 
+## kubectl get services
+
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   13d
+
+
+## kubectl get deployments
+
+
+
